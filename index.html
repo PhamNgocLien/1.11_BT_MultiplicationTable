@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Multiplication Table</title>
+</head>
+<body>
+<script>
+    let multiTable = "<table border='1' width='700' cellspacing='2'>";
+    let b = 1;
+    for (let i = 1; i <= 9; i++) {
+        multiTable = multiTable + "<tr>";
+        let a = 2;
+        for (let j = 1; j <= 8; j++) {
+            let result = a * b;
+            multiTable = multiTable + "<td>" + a + "x" + b + "=" + result + "</td>";
+            a++;
+        }
+        multiTable = multiTable + "</tr>";
+        b++;
+        j = 1;
+    }
+    multiTable = multiTable + "</table>"
+    document.write(multiTable);
+</script>
+</body>
+</html>
